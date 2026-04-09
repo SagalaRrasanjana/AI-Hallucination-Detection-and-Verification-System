@@ -1,6 +1,6 @@
 const normalizeClaim = require("./normalizationService");
 const { checkFactCheckAPI } = require("../utils/knowledgeApiService");
-const { verifyWithOpenAI } = require("./openaiService");
+
 
 async function verifyClaim(claim) {
     const normalized = normalizeClaim(claim);
